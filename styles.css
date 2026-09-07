@@ -1,0 +1,135 @@
+:root {
+  --bg: #0f1419;
+  --surface: #1a222c;
+  --text: #eef2f6;
+  --muted: #9aa7b5;
+  --accent: #3dd6c6;
+  --link: #7ee0d4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: radial-gradient(1200px 600px at 10% -10%, #1b2a33, transparent),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--link);
+}
+
+header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #2a3542;
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+header .brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+header nav a:hover,
+header nav a[aria-current="page"] {
+  color: var(--text);
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+h1 {
+  font-size: 1.85rem;
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.02em;
+}
+
+.updated {
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 2rem 0 0.6rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin: 0.35rem 0;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid #2a3542;
+  border-radius: 12px;
+  padding: 1.25rem 1.35rem;
+  margin-top: 1.5rem;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.home-links {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.home-links a {
+  display: block;
+  text-decoration: none;
+  background: var(--surface);
+  border: 1px solid #2a3542;
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  color: var(--text);
+}
+
+.home-links a:hover {
+  border-color: var(--accent);
+}
+
+.home-links span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-top: 0.25rem;
+}
+
+footer {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
